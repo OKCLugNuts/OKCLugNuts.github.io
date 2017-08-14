@@ -6,6 +6,6 @@ location: >
   Oklahoma City, OK 73106
 meetup: OKC-LUGnuts
 location-map:
-paginate: 3
+paginate: 2
 plugins:
   - jekyll-paginate
