@@ -2,30 +2,55 @@
 <html lang="{{ site.lang | default: " en-US " }}">
 
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/default.css">
   <title>{{ site.title}} - {{site.description}}</title>
 </head>
 
 <body>
 
-  <header>
+  <header class="blog-header">
     <div class="container">
-      <h1>{{ site.title | default: site.github.repository_name }}</h1>
-      <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+      <h1 class="blog-title"><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
+      <p class="lead blog-description">{{ site.description | default: site.github.project_tagline }}</p>
     </div>
   </header>
 
   <div class="container">
-    <section id="main_content">
-      {{ content }}
-    </section>
-    <div>
-    </div>{{site.location}}</div>
+    <div class="row">
+      <div id="main_content" class="col-sm-8 blog-main">
+        {{ content }}
+      </div>
+      <div class="col-sm-3 offset-sm-1 blog-sidebar">
+        <div class="sidebar-module sidebar-module-inset">
+          <h4>Location</h4>
+          <address>
+            StarSpace46<br>
+            1141 W Sheridan Ave,<br>
+            Oklahoma City, OK 73106
+          </address>
+          <div><a target="blank" href="https://goo.gl/maps/JdtJXswuszG2">Google Maps</a></div>
+        </div>
+        <div class="sidebar-module">
+          <h4>Times</h4>
+          <p>Second Friday of every month at 7:00pm</p>
+        </div>
+        <div class="sidebar-module">
+          <h4>Links</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://github.com/OKCLugNuts">GitHub</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
+  <footer class="blog-footer">
+    <p>
+    </p>
+  </footer>
 
 </body>
 
