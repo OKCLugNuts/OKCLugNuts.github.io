@@ -2,18 +2,19 @@
 layout: default 
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <div class="blog-post">
-    <h2 class="blog-post-title">{{ page.title | escape }}</h2>
-    <p class="blog-post-meta">
+  <div class="card">
+    <div class="card-header">
+      <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} {{ page.date | date: date_format }}
-      </time> {% if page.author %}by <a href="#">{{ page.author }}</a>{% endif %}</p>
-    <div class="post-content" itemprop="articleBody">
-      {{ content }}
+      </time>
     </div>
-
+    <div class="blog-post card-body">
+      <!-- <div>{% if post.author %}{{ post.author }}{% endif %} $ cat ~/posts{{post.url | replace: 'html', 'txt' }}</div>  -->
+      <div class="post-content" itemprop="articleBody">
+        {{ page.content }}
+      </div>
+    </div>
   </div>
-
   {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
 </article>
