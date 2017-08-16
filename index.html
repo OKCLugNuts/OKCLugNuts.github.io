@@ -9,13 +9,21 @@ layout: default
     <div class="post">
     <div class="card">
       <div class="card-header">
-       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} {{ post.date | date: date_format }}
-        </time>
+        <div class="titlebar row">
+          <div class="col-3"><div class="fa fa-terminal" aria-hidden="true"></div></div>
+          <div class="col-6 title-text">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><strong>{{ post.title | escape }}</strong></a>
+            {{ post.date | date: "%F" }}
+          </div>
+          <div class="col-3 control">
+          <div class="fa fa-minus-circle" aria-hidden="true"></div>
+          <div class="fa fa-plus-circle" aria-hidden="true"></div>
+          <div class="fa fa-times-circle" aria-hidden="true"></div>
+          </div>
+        </div>
       </div>
       <div class="card-body">
-         <!-- <div>{% if post.author %}{{ post.author }}{% endif %} $ cat ~/posts{{post.url | replace: 'html', 'txt' }}</div>  -->
+          <!-- <div>{% if post.author %}{{ post.author }}{% endif %} $ cat ~/posts{{post.url | replace: 'html', 'txt' }}</div>   -->
         <div class="post-content" itemprop="articleBody">
           {{ post.content }}
         </div>
@@ -26,6 +34,7 @@ layout: default
   </div>
 
   {% if paginator.total_pages > 1 %}
+  <div>
   <nav>
   <ul class="pagination">
     {% if paginator.previous_page %}
@@ -63,6 +72,7 @@ layout: default
     {% endif %}
   </ul>
   </nav>
+  </div>
   {% endif %}
 
 

@@ -4,10 +4,17 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="card">
     <div class="card-header">
-      <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} {{ page.date | date: date_format }}
-      </time>
+      <div class="titlebar row">
+          <div class="col-3"><div class="fa fa-terminal" aria-hidden="true"></div></div>
+          <div class="col-6 title-text">
+            <div class="">{{ page.title | escape }} {{ page.date | date: "%F"}}</div>
+          </div>
+          <div class="col-3 control">
+          <div class="fa fa-minus-circle" aria-hidden="true"></div>
+          <div class="fa fa-plus-circle" aria-hidden="true"></div>
+          <div class="fa fa-times-circle" aria-hidden="true"></div>
+          </div>
+        </div>
     </div>
     <div class="blog-post card-body">
       <!-- <div>{% if post.author %}{{ post.author }}{% endif %} $ cat ~/posts{{post.url | replace: 'html', 'txt' }}</div>  -->

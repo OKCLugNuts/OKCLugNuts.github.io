@@ -1,5 +1,6 @@
 ---
 layout: post
+author: yodasama
 ---
 Sorry for the late notice, our usual meetup organizer fell ill (he's starting to feel better) and with all the Kansas Linux Fest (KLF) preparations, the Meetup situation slipped my notice.  There WILL be a meeting this Friday (for those not making the pilgrimage to KLF this weekend),  ~7PM at StarSpace46 ( <https://goo.gl/maps/nMxbhf4ohxq>).
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+author: yodasama
 ---
 This Friday we will hold our regularly scheduled meeting, ~7PM at StarSpace46 1141 W Sheridan Ave, Oklahoma City, OK 73106 ( [https://goo.gl/maps/JdtJXswuszG2][startspace46-map] ) UPDATE:  we are apparently in a conference room this time, rather than the usual Event Space, so we'll keep an eye on the main building doors for member entry.
 

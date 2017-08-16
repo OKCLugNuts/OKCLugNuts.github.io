@@ -1,5 +1,6 @@
 ---
 layout: post
+author: yodasama
 ---
 It is that time again, LUGNuts time.  With weather cooperating this month, I can confidently confirm this month's meeting at the usual date/time, which will be this Friday at ~7PM at StarSpace46 1141 W Sheridan Ave, Oklahoma City, OK 73106 ( [https://goo.gl/maps/JdtJXswuszG2][startspace46-map] ) in the event space (with the garage doors), which is located at the North side of the building, behind the nice new fence (do not expect to be let in/noticed through any other access point).
 

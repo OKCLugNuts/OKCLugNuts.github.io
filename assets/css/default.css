@@ -8,7 +8,7 @@
 .sidebar-module-inset {
   padding: 1rem;
   background-color: #333;
-  border-radius: .25rem;
+  border-radius: .50rem;
 }
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
@@ -26,33 +26,33 @@
 
 .post .card{
   margin-bottom: 5px;
-  border-radius: .25rem;
+  border-radius: .50rem;
   border:0px;
 }
 
 .post .card-body{
   /* background-color: rgba(11, 18, 51, 0.65); */
-  background-color: #333;
-  color: white;
-  border-bottom-left-radius: .25em;
-  border-bottom-right-radius: .25em;
+  background-color: white;
+  border-bottom-left-radius: .50em;
+  border-bottom-right-radius: .50em;
 }
 
 .post .card-body a{
-  color: #17ff00;
+  color: #0004ff;
 }
 
 .post .card-header{
   background-color: rgb(37, 38, 43);
   color: white;
-  border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem;
+  border-top-left-radius: .50rem;
+  border-top-right-radius: .50rem;
   border:0px;
+  padding: .25rem .50rem;
 }
-
-/* body{
-  background-color: gray;
-} */
+body{
+  background-color: #dcdcdc;
+  color: black;
+} 
 
 .blog-title a{
   text-decoration: none;
@@ -66,4 +66,12 @@
 .page-item.disabled .page-link{
   background-color: #333;
   border:0px;
+}
+
+.control{
+  text-align: right;
+}
+
+.title-text{
+  text-align: center;
 }

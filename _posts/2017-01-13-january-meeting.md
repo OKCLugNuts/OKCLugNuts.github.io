@@ -1,5 +1,6 @@
 ---
 layout: post
+author: yodasama
 ---
 This being Oklahoma, we're keeping an eye on the weather.  We do have plans for a meeting currently, but if the ice storm threat doesn't improve, or gets worse, the closer we get to the day, we'll revisit that decision for safety's sake.
 
